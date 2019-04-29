@@ -1,0 +1,6 @@
+Algorithm:
+The idea is to keep track of vertical distance from top passing through root from even to odd or odd to even. We increment the vertical distance we go down to next diagonal or the downward checking the if the previous element is even the next element would be odd.
+1. Add root with vertical distance as 0 to the queue.
+2. Process the sum by checking either the downward or the diagonally based the previous input if prev is even then traverse to odd.
+3. Add left child current node into the queue for later processing. The vertical distance of left child is vertical distance of current node plus 1.
+4. Keep doing 2nd, 3rd and 4th step till the queue is empty.
